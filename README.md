@@ -15,7 +15,7 @@ Student-ify provides them with tools and resources to enhance their educational 
 
 ## 🚀 **Live Demo**
 Explore the live demo here and get a taste of Arctic Delights:  
-🔗 [Live Demo](https://student-ify.netlify.app/)
+🔗 [Live Demo](https://student-ifyexperience.netlify.app/)
 
 ## 🛠️ **Installation**
 
