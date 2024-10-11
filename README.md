@@ -14,7 +14,7 @@ Student-ify provides them with tools and resources to enhance their educational 
 - ⚙️ **JavaScript**: Adds interactivity, giving users a dynamic experience while browsing.
 
 ## 🚀 **Live Demo**
-Explore the live demo here and get a taste of Arctic Delights:  
+Explore the live demo here:  
 🔗 [Live Demo](https://student-ifyexperience.netlify.app/)
 
 ## 🛠️ **Installation**
