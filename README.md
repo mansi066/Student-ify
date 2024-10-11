@@ -19,7 +19,7 @@ Explore the live demo here and get a taste of Arctic Delights:
 
 ## 🛠️ **Installation**
 
-To experience Arctic Delights on your local machine, follow these steps:
+To experience Student-ify on your local machine, follow these steps:
 
 1. ```bash
    git clone https://github.com/avanimathur/Student-ify.git
