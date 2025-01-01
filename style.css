@@ -299,3 +299,88 @@ li a,a:visited{
 .footer-info p {
     margin: 5px 0;
 }
+
+.theme-toggle {
+    border-radius: 50%;
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle span {
+    font-size: 1.5rem;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-theme .content {
+    background-image: none;
+    background-color: #444;
+}
+
+/* .dark-theme .header {
+    background-color: #222;
+} */
+
+.dark-theme .search-bar input {
+    background-color: #555;
+    color: #eee;
+    border: 1px solid #777;
+}
+
+.dark-theme .search-bar button {
+    background-color: #666;
+    color: #eee;
+}
+
+.dark-theme .navbar a {
+    color: #eee;
+}
+
+.dark-theme .cta-button,
+.dark-theme .sign-up,
+.dark-theme .log-in {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-theme .footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-theme .footer .icons a {
+    color: #ddd;
+}
+
+.dark-theme .chatbot-toggler {
+    background-color: #555;
+    color: #eee;
+}
+
+.dark-theme .chatbot {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-theme .chatbox .chat.incoming {
+    background-color: #555;
+}
+
+.dark-theme .card {
+    background-color: #444;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2); /* White shadow */
+}
+
+.dark-theme .card h3,
+.dark-theme .card h2 {
+    color: #fff;
+}
