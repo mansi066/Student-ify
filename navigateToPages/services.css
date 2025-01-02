@@ -66,15 +66,14 @@ h3:hover{
 
 /* Dark Theme Styles */
 .dark-theme {
-    background-color: #333;
+    background-color: #222;
     color: #eee;
 }
 
 .dark-theme .card {
-    background-color: #444;
-    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2); /* White shadow */
+    background-color: #333;
+    box-shadow: -1px 0px 5px 3px #ccccccdb;
 }
-
 /* .dark-theme .card h3,
 .dark-theme .card h2 {
     color: #ffffff00;

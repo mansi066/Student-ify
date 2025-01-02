@@ -317,14 +317,10 @@ li a,a:visited{
 
 /* Dark Theme Styles */
 .dark-theme {
-    background-color: #333;
+    background-color: #121212;
     color: #eee;
 }
 
-.dark-theme .content {
-    background-image: none;
-    background-color: #444;
-}
 
 /* .dark-theme .header {
     background-color: #222;
@@ -345,12 +341,12 @@ li a,a:visited{
     color: #eee;
 }
 
-.dark-theme .cta-button,
-.dark-theme .sign-up,
-.dark-theme .log-in {
-    background-color: #555;
+.dark-theme .cta-button, .dark-theme .Authenticate button {
+  
     color: #eee;
+    background: linear-gradient(135deg, #870000, #190a05);
 }
+
 
 .dark-theme .footer {
     background-color: #222;
@@ -382,5 +378,17 @@ li a,a:visited{
 
 .dark-theme .card h3,
 .dark-theme .card h2 {
-    color: #fff;
+    
+        color: #000;
+    }
+.dark-theme .header {
+    overflow: hidden;
+    width: 100%;
+    height: 5rem;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: linear-gradient(135deg, #e43a15, #e65245);
 }
