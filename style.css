@@ -354,7 +354,7 @@ li a,a:visited{
 .dark-theme .cta-button, .dark-theme .Authenticate button {
   
     color: #eee;
-    background: linear-gradient(135deg, #870000, #190a05);
+    background: linear-gradient(135deg, #b10202, #39170c);
 }
 
 
@@ -400,5 +400,15 @@ li a,a:visited{
     justify-content: space-between;
     align-items: center;
     
-    background: linear-gradient(135deg, #e43a15, #e65245);
+    background: lightsalmon;
+}
+.font-mono{ 
+    font-weight: 900;
+    font-size: 29px;
+    margin-top: -34px;
+    margin-right: 3px;
+    margin-left: 27px;
+    background: linear-gradient(to right, #200122, #6f0000);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
