@@ -3,11 +3,7 @@
     padding: 15rem;
     background-image: url('../img/back.jpg');
 }
-.Authenticate {
-    height: 300px;
-    text-align: center;
 
-}
 .logged p{
     text-align: center;
     text-decoration: underline;
