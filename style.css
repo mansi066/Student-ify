@@ -186,16 +186,26 @@ li a,a:visited{
     width: 9rem;
     object-fit: cover;
 }
-.icons .fa-brands{
+.icons .fa-brands {
     font-size: 2rem;
     padding: 0.5rem;
-    border: 2px solid #000;
+    border: 2px solid white; /* Border color matches footer background for contrast */
     border-radius: 50%;
-    background-color: #000;
-    background: white;
-    -webkit-background-clip: #fff;
-    -webkit-text-fill-color: black;
+    background-color: white; /* Background color of the icon */
+    color: black; /* Icon text color */
+    margin-bottom: auto;
+    transition: all 0.3s ease; /* Smooth transition for hover/click effects */
 }
+
+/* Hover effect for icons */
+.icons .fa-brands:hover {
+    background-color: #ff5722; /* Example hover background color (orange) */
+    color: white; /* Text color when hovered */
+    border-color: #ff5722; /* Border color changes on hover */
+    transform: scale(1.2); /* Slightly enlarges the icon */
+}
+
+
 .follow-us{
     display: flex;
     justify-content: center;
