@@ -12,8 +12,10 @@ html,body{
     overflow-x: hidden;
 }
 
+
 .content{
-    background-image: url('./img/back.jpg');
+    background-image: url('img/New Background.jpeg');
+    background-size: cover;
 }
 
 .header{
@@ -39,10 +41,12 @@ html,body{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: white;
   }
   
   .navbar-list li {
     display: inline-block; 
+    color: white;
   }
   
   /* Dark Mode */
@@ -87,6 +91,7 @@ html,body{
   justify-content: space-between;
   align-items: center;
   padding:0 20px;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
   }
   
   .left{
@@ -116,8 +121,8 @@ html,body{
     border: 2px solid transparent;
     border-radius: 8px;
     outline: none;
-    background-color: #0f0c29;
-    color: #0d0c22;
+    background-color:whitesmoke;
+    color: white;
     transition: .3s ease;
    }
    
@@ -447,11 +452,11 @@ html,body{
 }
 .message:hover{
     text-decoration: underline;
-    text-shadow: grey;
+    text-shadow: black;
     transform: scale(1.1);
 }
 p{
-    color: white;
+    color: black;
 }
 
 .logo2 {
@@ -689,10 +694,10 @@ li a,a:visited{
 
 /* Footer Styling */
 footer {
-    background-color: #f8f9fa;
+    background-color: black;
     padding: 40px 0;
     font-family: 'Arial', sans-serif;
-    color: #6c757d;
+    color: white;
   }
   
   .footer-content {
@@ -751,7 +756,7 @@ footer {
   .footer-section.newsletter {
     grid-column: span 4; /* span across all sections */
     padding: 30px;
-    background-color: #ffffff;
+    background-color: black;
     background-image: url('https://media.istockphoto.com/id/666193858/photo/indian-vegetarian-office-or-school-lunch-box-or-tiffin-with-north-indian-or-maharashtrian.jpg?s=612x612&w=0&k=20&c=Ac-U7hY1leIuM97jLNPqzv7SX5DbZofu5p_pfUCgeJA=');
     text-align: center;
     margin-top: 20px;
