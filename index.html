@@ -5,8 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studentify</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Chatbot/chat.css">
+    <script href="../Chatbot/chat.js" defer></script>
+    <link
+          href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet"
+        />
+    <link href="../navigateToPages/faq.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://storage.googleapis.com/swayam2_central/assets/js/swayam_js/jquery.js"></script>
+
+
+
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./faq.css">
+
     <link rel="stylesheet" href="./Chatbot/chat.css">
     <script src="./navigateToPages/scriptDashboard.js"></script>
     <script src="./Chatbot/chat.js" defer></script>
@@ -15,11 +34,242 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/abouts/about-5/assets/css/about-5.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body background="./img/back.jpg">
+<style>
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  transition: all 0.2s linear;
+  background:linear-gradient(135deg ,#5cbdb9,#385b63) ;
+}
+.question{
+  color:white;
+}
+
+.qa-container {
+    border: 2px solid #f7fafc;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 1px #e2e8f0;
+}
+
+.py-md-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 22rem !important;
+    }
+    h2{
+      font-size:2rem;
+    }
+    h5{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+
+  .content{
+    background: #ebf6f5 ;
+   }
+   .menu {
+    color: #2d3748;
+   }
+  .category-heading {
+    border-bottom:#feb2b2 ;
+  }
+
+  .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+        background:   #ebf6f5 ;
+
+    }
+    .answer p {
+     background: #fbe3e8; 
+
+    }
+  
+    .qa-container {
+      background:  #385b63;
+}
+
+
+.navbar-list li a {
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    overflow: hidden;
+}
+.bg-light {
+  background-color:   #fbaf08 !important;
+}
+
+.brand-name {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #385b63;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ffc901;
+}
+
+.social a:hover {
+  transform: translateY(-0.15rem);
+}
+
+.networking {
+  padding: 116px 0;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 44px;
+  color:whitesmoke;
+}
+
+
+header{
+  background:  #fea49f;
+
+}
+.main-sec{
+  background:linear-gradient(to right,#5cbdb9,#2d454f ) ;
+   
+}
+.btn-primary {
+  color: #fff;
+  background-color : #1b175e;
+  border-color: #0f0d35;
+  height:7rem;
+  width:18rem;
+  font-size: 2rem;
+
+}
+.active {
+    background-color:  #1b175e;
+    width: fit-content;
+    color:#e7eeef;
+    border:#0f0d35;
+}
+
+h1{
+  margin: 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: #1b175e;
+    text-align: center;
+
+}
+.nav-item a {
+  margin: 0 6px;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #000;
+  background-color: #fbe3e8;
+
+  border-color: #2d454f;
+}
+.img {
+  width: 719px;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000e6;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.social-icon::after {
+  content: none;
+}
+@media only screen and (max-width: 768px) {
+  .img {
+    width: 338px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.incoming {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.incoming-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.incoming-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.incoming-delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Apply the "incoming" class with delay to the elements you want to animate */
+.networking,
+.heading,
+.text-muted,
+.btn-primary,
+.img img {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.col-md-6 {
+    width: 400px;
+    height: 227px;
+    display: flex
+;
+    align-content: center;
+    justify-content: flex-end;
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+    /* .card{
+      height: 20rem;
+    width: 94rem;
+    display: flex
+;
+    flex-wrap: wrap;
+    } */
+</style>
     <header>
         <nav class="navbar">
           <div class="left">
@@ -40,10 +290,11 @@
           </div>
   
           <ul class="navbar-list">
-            <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
-            <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
-            <li><a href="../navigateToPages/contact.html">CALENDAR</a></li>
-            <li><a href="../navigateToPages/faq2.html">FAQ</a></li>
+            <li> <a class="nav-link click-scroll" href="#sec_1">Home</a></li>
+            <li> <a class="nav-link click-scroll" href="#sec_2">About Us</a></li>
+            <li><a href="./navigateToPages/profile.html">STUDENT Profile</a></li>
+            <li><a href="./navigateToPages/contact.html">CALENDAR</a></li>
+            <li> <a class="nav-link click-scroll" href="#sec_3">FAQ</a></li>
           </ul>
         </nav>
         <div class="right">
@@ -92,31 +343,601 @@
         </div>
       </header>
 
-    <div class="content">
-        <br>
-        <img src="./img/logo.jpg" alt="" class="Hi">
 
-        <p id="message" class="message">Hi! </p>
-        <div id="content">
-            <p id="content">Dear Student,</p>
-            <br>
-            <p>College is an exciting chapter filled with opportunities for growth, learning, and self-discovery. As you navigate this journey, I encourage you to embrace every experience with an open mind and a courageous spirit.</p>
-            <br>
-            <p>Amidst the challenges of coursework, exams, and deadlines, remember to prioritize your well-being. Take breaks when needed, seek support from friends and mentors, and cultivate healthy habits that nourish your mind, body, and soul.</p>
-            <br>
-            <p>It's natural to encounter obstacles along the way, but don't let setbacks deter you from pursuing your dreams. Use them as opportunities to learn, adapt, and grow stronger. Your resilience and determination will propel you forward, even in the face of adversity.</p>
-            <br>
-            <p>College is not just about academics; it's also about exploration and discovery. Take advantage of extracurricular activities, internships, and study abroad programs to broaden your horizons and discover new passions.</p>
-            <br>
-            <p>But amidst all the excitement, remember to stay true to yourself. Define your own path and pursue what truly inspires you. Your college experience is a journey of self-discovery, so don't be afraid to explore different paths and embrace your unique identity.</p>
-            <br>
-            <p>Above all, cherish the friendships and memories you create along the way. College is a time to forge lifelong connections and create unforgettable moments that will shape your future.</p>
-            <br>
-            <p>As you embark on this adventure, know that you have the potential to achieve greatness. Believe in yourself, stay focused on your goals, and never underestimate the power of your dreams.</p>
+   
+      <!-- main -->
+      <section class="main-sec" id="sec_1">
+        <div>
+          <div class="container py-4">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="networking incoming">
+                  <h2 class="display-5 heading incoming incoming-delay-1">Welcome to <span class="brand-name">Studentify</span> for worldwide communication</h2>
+                  <p class="text-muted incoming incoming-delay-2">We're a company that focuses on establishing long-term relationships with customers.</p>
+               <a href="./navigateToPages/services.html"  > <button type="button" id="change-lang" class="btn btn-primary rounded-pill px-4 py-3 incoming incoming-delay-3">Explore Course</button></a>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="img incoming incoming-delay-1">
+                  <img src="student.png" alt="communication" class="w-80" style="width:600px">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <br>
+      </section>
+      
+<!-- About Us -->
+<section id="sec_2">
+  <div id="background-image" style="height: 100vh; background-image: url(https://plus.unsplash.com/premium_photo-1683887034491-f58b4c4fca72?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover; background-position: center;" class="position-relative w-100">
+    <div id="text-overlay" class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="top: 0; right:-700px; bottom: 0; left: 0; background-color: rgba(92, 189, 185, 0.7)">
+      <div class="container">
+        <h2 style="font-size: 6rem; font-weight: 800rem; color: #1b175e; margin-left: 117px; margin-top: 8px;">About Us</h2>
+        <p style="color: #0f0d35; text-align: center; margin-left: -779px;">Welcome to STUDENTIFY,<br>
+          your ultimate destination for unlocking your full academic potential and expanding your horizons. <br>
+          At Studentify, we understand the importance of education and the pursuit of knowledge as vital pillars<br> for personal and professional growth.
+        </p>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header" style="background: #385b63; color:#ebf6f5">
+              <h3> Our Approach</h3>
+            </div>
+            <div class="card-body" style="background: #fbe3e8 ;">
+              <blockquote class="blockquote mb-0">
+                <p style="color: #0f0d35;">With a team of dedicated educators, industry experts, and passionate individuals, we strive to create a dynamic learning environment that fosters curiosity, critical thinking, and creativity.</p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" style="background: #385b63; color:#ebf6f5">
+              <h3>Our Vision</h3>
+            </div>
+            <div class="card-body" style="background: #fbe3e8; ">
+              <blockquote class="blockquote mb-0">
+                <p style="color: #0f0d35;"> Our mission is to empower students like you to achieve excellence by offering a comprehensive range of resources and courses tailored to your needs.</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- Add the animate.css library for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Add JavaScript for scroll detection and smooth scrolling -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.click-scroll').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+
+        const observeAnimation = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              document.getElementById('background-image').classList.add('animate__animated', 'animate__fadeIn');
+              document.getElementById('text-overlay').classList.add('animate__animated', 'animate__fadeIn');
+              observeAnimation.disconnect();
+            }
+          });
+        });
+
+        observeAnimation.observe(targetElement);
+      });
+    });
+  });
+</script>
+
+
+<section  id="sec_3">
+
+   
+    <div class="content">
+      <h1>Frequently Asked Questions</h1>
+      <div class="container faq-container notranslate">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-sm-12">
+            <li
+              class="General menu"
+              id="menu1"
+              onclick="changeSection('General')"
+            >
+              General
+            </li>
+
+            <li
+              class="Courses menu"
+              id="menu2"
+              onclick="changeSection('Courses')"
+            >
+              Courses
+            </li>
+
+            <li class="ALERT menu" id="menu6" onclick="changeSection('ALERT')">
+              ALERT
+            </li>
+          </div>
+          <div class="col-md-9 col-sm-9 col-sm-12 faq-qa-ans">
+            <div
+              id="faq-content-General"
+              class="mensection"
+              style="display: block"
+            >
+              <div class="category-heading">General</div>
+              <br />
+              <div class="qa-container">
+                <div class="question">
+                  <div>What is STUDENTIFY ?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    STUDENTIFY , which is instrumental for self-actualisation,
+                    provides opportunities for a life-long learning.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    For which standard &amp; discipline, the Courses shall be
+                    delivered through STUDENTIFY ?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    The STUDENTIFY provides all the courses from university
+                    level (Both UG and PG)
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Can any person in the world register a Course on STUDENTIFY
+                    ?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>No, only limited to INDIA.</p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    What is the eligibility criterion for joining an online
+                    course?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    There is no specific eligibility / age criterion for any of
+                    the online courses. The faculty of a particular course may
+                    recommend some basic knowledge of certain topics for a
+                    person to fully grasp the contents of a course. Anyone may
+                    join an online course and register for the exam.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Is there a fee to join/register for a STUDENTIFY course?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    The courses delivered through STUDENTIFY are available free
+                    of cost to the learners.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Are Skill based courses also to be covered under STUDENTIFY
+                    ?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>The STUDENTIFY shall also cover Skill based courses.</p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>How can I register on STUDENTIFY ?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Go to the official website and click on "Sign-In" to
+                    register yourself.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    I forgot my login password. Is there any provision to reset
+                    my password?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Click "forgot password" option and follow steps to
+                    retrieve/recreate your password.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>How can I select a course on STUDENTIFY ?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    After you have search a category or a keyword, a list of
+                    courses will appear. You may click the course-title of the
+                    course that you find suitable, detailed course-page of that
+                    course would appear.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    How can I know which course will be suitable to enroll into?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Go through the Course-page and check the eligibility and
+                    other information.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>Can I search category wise courses on STUDENTIFY ?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>Yes, you can.</p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>Can I search a course on a specific topic?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>Yes, you can search a course on a specific topic.</p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>How to find out the eligibilities for the courses?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    In the Course-page, all the details of the eligibility are
+                    mentioned.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Can I enroll into multiple courses once I got myself
+                    registered with STUDENTIFY portal?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Yes, you can enroll in multiple courses on STUDENTIFY after
+                    registration.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Is there any time limit or deadline to the courses where I
+                    am enrolled?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    For participation in a course which is a scheduled course,
+                    students cannot enroll after the course is started. For a
+                    Self-paced course there is no deadline.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>Can I submit my assignments online?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>Yes, It can be done!</p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Do I need a dedicated internet connection? or I can consume
+                    course contents offline once logged in?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    You would need an active internet connection to consume
+                    course contents.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>Can I also download my content for offline access?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Yes provided faculty has given the download access to the
+                    students.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="faq-content-Courses"
+              class="mensection"
+              style="display: none"
+            >
+              <div class="category-heading">Courses</div>
+              <br />
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    Where do I get information about up-coming certification
+                    courses?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    The details will be available at
+                    <a href="/navigateToPages/services.html" target="_blank">
+                      STUDENTIFY
+                    </a>
+                    when the enrolments begin.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    If I were to suggest a particular subject/topic for an
+                    STUDENTIFY online course, will you take that into
+                    consideration?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Suggestions are always welcome. The respective corodinator
+                    will decide on this.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>
+                    How will I come to know about assignments and deadlines?
+                  </div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Each assignment page will have the due date and time for
+                    submission.
+                  </p>
+                </div>
+              </div>
+              <div class="qa-container">
+                <div class="question">
+                  <div>How do I find out my score in each assignment?</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    You will be able to see the scores of the submitted
+                    assignments on the progress page once the due date of
+                    submission is over.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="faq-content-ALERT"
+              class="mensection"
+              style="display: none"
+            >
+              <div class="category-heading">ALERT</div>
+              <br />
+              <div class="qa-container">
+                <div class="question">
+                  <div>Recommendation</div>
+                  <i class="fa arrow-custom fa-angle-down"></i>
+                </div>
+                <div class="answer">
+                  <p>
+                    Please ensure to review the respective course page for
+                    comprehensive details and direct any inquiries to the
+                    relevant national coordinator responsible for offering the
+                    course.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  
+ 
+
+<script>
+  $(document).ready(function() {
+   $("#menu1").click();
+   $('.question').click(function() {
+     $(this).toggleClass('question-change');
+     $(this).find('.arrow-custom').toggleClass('close-arrow');
+     $(this).next('.answer').slideToggle();
+   });
+  });
+
+  function changeSection(category){
+     $('.mensection').hide();
+     $('#faq-content-'+category).show();
+     $('.menu').removeClass('active');
+     $('.'+category).addClass('active');
+  }
+</script>
+
+<script>
+$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip();
+});
+
+$(document).ready(function() {
+
+$(".CheckboxContainer .container").click(function(){
+
+    $("input[type='checkbox']").click(function(e){
+
+        $div = $(this).parent();
+        text = $div[0].firstChild.nodeValue;
+        id_text = text.replace(/\s+/g, "");
+        id_text = id_text.replace("&", "_");
+
+        if($(this).prop("checked") == true){
+          $(".sf-filtertags ul").prepend("<li>"+text+"<a href='#' name='"+text+"' id='"+id_text+"' onclick='removeTagAndUncheck(this.id,this.name)'> X </a></li>");
+        }
+        else{
+          $("#"+id_text).parent().remove();
+        }
+
+        clearAllShowHide();
+        e.stopImmediatePropagation();
+      });
+  });
+
+  $('.dropdown-submenu a.submenu').on("click", function(e){
+      $.each($(".dropdown-submenu div.dropdown-menu"), function(){
+          if($(this).is(":visible")) {
+              if( $( "div" ).index( $(this).parent() ) != $( "div" ).index( $(e.target).next('div.dropdown-menu').parent() ) ){
+                  $(this).css("display","none");
+                  $(this).parent().find("i").removeClass("fa-angle-right");
+                  $(this).parent().find("i").addClass("fa-angle-down");
+              }
+          }
+      });
+
+      $(e.target).next('div').toggle();
+
+      if(($(e.target).next('div')).is( ":visible" )){
+          $(e.target).find("i").removeClass("fa-angle-down");
+          $(e.target).find("i").addClass("fa-angle-right");
+      }
+      else{
+          $(e.target).find("i").removeClass("fa-angle-right");
+          $(e.target).find("i").addClass("fa-angle-down");
+      }
+      e.stopPropagation();
+      e.preventDefault();
+  });
+
+  $(".dropdown").on("show.bs.dropdown", function(event){
+      $( event.target).find("div.dropdown-menu").css("display","table") ;
+      $(event.target).find("i").removeClass("fa-angle-right");
+      $(event.target).find("i").addClass("fa-angle-down");
+  });
+  $(".dropdown").on("shown.bs.dropdown", function(){
+      $('.dropdown-submenu a.submenu').next('div').toggle();
+  });
+  $(".dropdown").on("hide.bs.dropdown", function(event){
+      $( event.target).find("div.dropdown-menu").css("display","none") ;
+  });
+});
+
+function clearAllShowHide(){
+if ( $('.sf-filtertags ul li').length > 2 ) {
+  $("#clearAllTags").css("visibility","visible");
+}else{
+  $("#clearAllTags").css("visibility","hidden");
+}
+}
+
+function removeTagAndUncheck(id, name){
+$("input[name='"+name.trim()+"']:checkbox").prop('checked', false);
+$("#"+id).parent().remove();
+clearAllShowHide();
+}
+
+function clearAllTags(){
+$('.sf-filtertags ul').empty();
+$('.sf-filtertags ul').prepend('<li id="clearAllTags" style="border:none;visibility: hidden;" onclick="clearAllTags()"><a href="#">Clear All</a></li>');
+$('input:checkbox').removeAttr('checked');
+clearAllShowHide();
+}
+
+$(document).on("focusin", function(event){
+  var $trigger = $(".dropdown");
+  if($trigger !== event.target && !$trigger.has(event.target).length){
+      $(".dropdown-menu").slideUp("fast");
+  }
+});
+
+$(window).click(function() {
+  $(".dropdown-menu").slideUp("fast");
+});
+
+$('a').click(function(){
+  if($(this).text().trim() == 'Show More' ){
+      $(this).html('Show Less <i class="fa fa-chevron-up"></i>');
+  }
+  else if($(this).text().trim() == 'Show Less' ){
+       $(this).html('Show More <i class="fa fa-chevron-down"></i>');
+  }
+});
+</script>  
 
     <footer class="footer">
         <div class="follow-us">
@@ -167,6 +988,11 @@
                 icon.textContent = 'light_mode';
             }
         });
+
+        $(document).ready(function () {
+  $("#change-lang").find(html).attr("lang");
+});
+
     </script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
