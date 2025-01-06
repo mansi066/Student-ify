@@ -14,8 +14,18 @@ html,body{
 
 
 .content{
-    background-image: url('img/New Background.jpeg');
-    background-size: cover;
+  background-image: url('img/New Background.jpeg');
+  background-size: cover;
+  padding: 2rem 4rem;
+ }
+
+.content div{
+  margin-top: 4rem;
+  border-radius: 8px;
+  padding: 3rem;
+  background-color: #14132f;
+  box-shadow: 3px -3px 24px 2px rgba(239, 236, 236, 0.5);
+
 }
 
 .header{
