@@ -6,6 +6,12 @@
     height: 150px;
 }
 
+@media (max-width: 600px){
+    .card-container {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .card {
     background-color: #ffffff;
     border-radius: 15px;
@@ -22,6 +28,7 @@
     justify-content: center; 
     flex-direction: column; 
     position: relative;
+    object-fit: cover;
 }
 
 .card-content {

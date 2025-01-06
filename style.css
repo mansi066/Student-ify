@@ -16,6 +16,8 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
+
+
 .content{
     background-image: url('./img/back.jpg');
 }
@@ -113,7 +115,7 @@ header{
 }
 
 .sidebar li a{
-    color: white;
+    color: black;
     margin-left: 10px;
     display: flex;
     flex-direction: row;
