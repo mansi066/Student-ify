@@ -58,16 +58,32 @@ margin-top: 12px;
 background:  #ebf6f5 ;
 padding: 20px;
 }
+.theme-dark .card-container{
+  background: rgba(33 33 33 /1);
+}
 .btn-primary{
 background: #5cbdb9;
 border-color: aquamarine;
+}
+.theme-dark .btn-primary{
+  background: #4caf50;
+  color:#fff;
+}
+.theme-dark .btn-primary:hover{
+  background: #ffc107;
+  color:white;
 }
 .btn-primary:hover{
 background: #fbe3e8 ;
 color:black;
 
 }
-
+.theme-dark  #scrollToTopBtn{
+        background-color:  #ffc107;
+      }
+      .theme-dark #scrollToTopBtn:hover{
+        background-color: #4caf50 ;
+      }
   </style>
 
 <body>
@@ -125,7 +141,7 @@ color:black;
           <button class="log-in"><span><a href="../Login-page/login-pg.html" style="color:white;">Log In</a></span></button>
         </div>
         <label class="theme-switch">
-          <input type="checkbox" class="theme-switch__checkbox">
+          <input type="checkbox" class="theme-switch__checkbox"  id="themeToggle" onchange="toggleTheme()">
           <div class="theme-switch__container">
             <div class="theme-switch__clouds"></div>
             <div class="theme-switch__stars-container">
@@ -351,19 +367,35 @@ color:black;
     </div>
 
     <script src="../navigateToPages/services.js"></script>
-    <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const icon = themeToggle.querySelector('span');
-
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            if (document.body.classList.contains('dark-theme')) {
-                icon.textContent = 'dark_mode';
-            } else {
-                icon.textContent = 'light_mode';
-            }
-        });
-    </script>
+     <!-- Dark  mode theme -->
+  <script>
+    // Function to set the theme
+  function setTheme(themeName) {
+      document.body.className = themeName;
+      localStorage.setItem('theme', themeName);
+  }
+  
+  // Function to toggle the theme
+  function toggleTheme() {
+      if (document.body.classList.contains('theme-light')) {
+          setTheme('theme-dark');
+      } else {
+          setTheme('theme-light');
+      }
+  }
+  
+  // Immediately invoked function to set the theme on initial load
+  (function () {
+      const savedTheme = localStorage.getItem('theme') || 'theme-light';
+      setTheme(savedTheme);
+  
+      // Set the checkbox state based on the saved theme
+      const themeToggleCheckbox = document.querySelector('.theme-switch__checkbox');
+      themeToggleCheckbox.checked = savedTheme === 'theme-dark';
+  })();
+  
+     
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
