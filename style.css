@@ -131,7 +131,7 @@ html,body{
     border-radius: 8px;
     outline: none;
     background-color:whitesmoke;
-    color: white;
+    /* color: white; */
     transition: .3s ease;
    }
    
