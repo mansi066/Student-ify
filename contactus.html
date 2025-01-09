@@ -4,52 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studentify</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./Chatbot/chat.css">
-    <script src="./navigateToPages/scriptDashboard.js"></script>
-    <script src="./Chatbot/chat.js" defer></script>
+    <title>Contact Us</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../Chatbot/chat.css">
+    <script src="../navigateToPages/scriptDashboard.js"></script>
+    <script src="../Chatbot/chat.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-    /* Scroll to Top Button */
-      #scrollToTopBtn {
-          display: none;
-          position: fixed;
-          bottom: 85px;
-          right: 40px;
-          height: 50px;
-          width: 50px;
-          background-color: rgb(80, 183, 218);
-          color: white;
-          border: none;
-          border-radius: 50%;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 15px;
-      }
-
-      #scrollToTopBtn:hover {
-          background-color: rgb(80, 183, 218);
-      }
-</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+<style>
 
-<body >
+  .contact-form-container {
+  backdrop-filter: blur(10px); 
+  background: rgba(255, 255, 255, 0.9); 
+  width: 70%; 
+  max-width: 700px; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto; 
+}
 
+.contact-form-container form {
+  width: 100%; 
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+.contact-form-container input,
+.contact-form-container textarea,
+.contact-form-container button {
+  width: 100%;
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+.contact-form-container button {
+  background-color: #007bff; 
+  color: white; 
+  padding: 12px;
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.contact-form-container button:hover {
+  background-color: #0056b3; 
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup p {
+  color: black; /* Makes the message text black for visibility */
+  font-size: 16px; /* Optional: Adjust font size */
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+</style>
+
+<body background="./img/back.jpg">
+    <!--navbar-->
     <header>
         <nav class="navbar">
           <div class="left">
-            <a href="../index.html">
-              <img src="./img/logo.jpg" alt="Logo" class="logo" />
-            </a>
-  
-            <div class="group">
+          <a href="../index.html">
+          <img src="../img/logo.jpg" alt="Logo" class="logo" />
+          </a> 
+        <div class="group">
               <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
                 <g>
                   <path
@@ -57,10 +144,10 @@
                   ></path>
                 </g>
               </svg>
-              <input placeholder="Search" type="search" class="input"/>
+              <input placeholder="Search" type="search" class="input" />
             </div>
           </div>
-  
+
           <ul class="navbar-list">
             <li><a href="../navigateToPages/aboutus.html">About Us</a></li>
             <li><a href="../navigateToPages/profile.html">STUDENT Profile</a></li>
@@ -84,7 +171,7 @@
               </svg>
             </button>
           </a>
-  
+
           <div class="Authenticate">
             <button class="sign-up">
               <span><a href="sign_up.html" style="color:white;">Sign Up</a></span>
@@ -115,76 +202,72 @@
         </div>
       </header>
 
-    <div class="content">
-        <br>
-        <img src="./img/logo.jpg" alt="" class="Hi">
-        <div id="content">
-          <p id="message" class="message">Hi! </p>
-          <br>
-            <p id="content">Dear Student,</p>
-            <br>
-            <p>College is an exciting chapter filled with opportunities for growth, learning, and self-discovery. As you navigate this journey, I encourage you to embrace every experience with an open mind and a courageous spirit.</p>
-            <br>
-            <p>Amidst the challenges of coursework, exams, and deadlines, remember to prioritize your well-being. Take breaks when needed, seek support from friends and mentors, and cultivate healthy habits that nourish your mind, body, and soul.</p>
-            <br>
-            <p>It's natural to encounter obstacles along the way, but don't let setbacks deter you from pursuing your dreams. Use them as opportunities to learn, adapt, and grow stronger. Your resilience and determination will propel you forward, even in the face of adversity.</p>
-            <br>
-            <p>College is not just about academics; it's also about exploration and discovery. Take advantage of extracurricular activities, internships, and study abroad programs to broaden your horizons and discover new passions.</p>
-            <br>
-            <p>But amidst all the excitement, remember to stay true to yourself. Define your own path and pursue what truly inspires you. Your college experience is a journey of self-discovery, so don't be afraid to explore different paths and embrace your unique identity.</p>
-            <br>
-            <p>Above all, cherish the friendships and memories you create along the way. College is a time to forge lifelong connections and create unforgettable moments that will shape your future.</p>
-            <br>
-            <p>As you embark on this adventure, know that you have the potential to achieve greatness. Believe in yourself, stay focused on your goals, and never underestimate the power of your dreams.</p>
-        </div>
-        
-        <br>
-    </div>
+<div class="content">
+<br>
+  <div class="contact-form-container">
+    <h1 class="text-center text-2xl font-bold text-gray-800 mb-6">Contact Us</h1>
+    <form id="contactForm">
+      <label for="name" class="block font-semibold mb-2">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
 
+      <label for="email" class="block font-semibold mb-2">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <label for="mobile" class="block font-semibold mb-2">Your Mobile No</label>
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        placeholder="Enter your mobile number"
+        required
+        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <label for="message" class="block font-semibold mb-2">Your Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Enter your message"
+        required
+        class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+<!-- Popup Message -->
+<div id="popupMessage" class="popup hidden">
+  <p>Your message has been sent successfully!🎉</p>
+  <button onclick="closePopup()">Close</button>
+</div>
 <footer>
-      
+
   <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: white; color: black;">
     <div class="footer-section about" style="flex: 2; min-width: 300px; display: flex; align-items:flex-start; margin: 10px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-      <img src="..\img\logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
+      <img src="img\logo.jpg" alt="Studentify" style="width: 100px; margin-right: 20px;">
       <p style="margin: 0; color: black;">Welcome to STUDENTIFY, your go-to platform for unlocking academic potential and broadening horizons. We empower students with tailored resources, expert-led courses, and a dynamic learning environment to foster growth, curiosity, and critical thinking for success.</p>
-        </div>
-    
-        <div class="footer-section services" style="flex: 1; min-width: 150px; margin: 10px;">
-          <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Studentify</h2>
-          <ul style="list-style: none; padding: 0;">
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Who We Are</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Blog</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Work With Us</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Investor Relations</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
-          </ul>
-        </div>
-    
-    
-        <div class="footer-section learn-more" style="flex: 1; min-width: 150px; margin: 10px;">
-          <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Learn More</h2>
-          <ul style="list-style: none; padding: 0;">
-            <li><a href="privacy.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Privacy Policy</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Security</a></li>
-            <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Terms of Service</a></li>
-          </ul>
-        </div>
-    
-        <div class="footer-section social-links" style="flex: 1; min-width: 150px; margin: 10px;">
-          <h2 style="font-size: 18px; margin-bottom: 10px; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">Follow Us</h2>
-          <ul class="social-icons" style="list-style: none; padding: 0; display: flex; gap: 10px;">
-            <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#" style="color: black; text-decoration: none; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.transform='scale(1.2)'; this.style.display='inline-block'" onmouseout="this.style.color='black'; this.style.transform='scale(1)'"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    
-      <div class="footer-bottom" style="padding: 10px; text-align: center; background-color: white;">
-        <p style="margin: 0; color: black; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">© 2024 Studentify. All rights reserved.</p>
-      </div>
+
     </div>
 
     <div class="footer-section services" style="flex: 1; min-width: 150px; margin: 10px;">
@@ -194,7 +277,7 @@
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Blog</a></li>
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Work With Us</a></li>
         <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Investor Relations</a></li>
-        <li><a href="../contactus.html" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
+        <li><a href="#" style="color: black; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='#e67e22'; this.style.paddingLeft='10px'" onmouseout="this.style.color='black'; this.style.paddingLeft='0'">Contact Us</a></li>
       </ul>
     </div>
 
@@ -223,9 +306,6 @@
   <div class="footer-bottom" style="padding: 10px; text-align: center; background-color: white;">
     <p style="margin: 0; color: black; transition: color 0.3s ease;" onmouseover="this.style.color='#e67e22'" onmouseout="this.style.color='black'">© 2024 Studentify. All rights reserved.</p>
   </div>
-
-  <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
-
 </footer>
 
     <button class="chatbot-toggler">
@@ -249,40 +329,36 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
     <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const icon = themeToggle.querySelector('span');
+         const themeToggle = document.querySelector('.theme-toggle');
+    const icon = themeToggle.querySelector('span');
 
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            if (document.body.classList.contains('dark-theme')) {
-                icon.textContent = 'dark_mode';
-            } else {
-                icon.textContent = 'light_mode';
-            }
-        });
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        if (document.body.classList.contains('dark-theme')) {
+            icon.textContent = 'dark_mode';
+        } else {
+            icon.textContent = 'light_mode';
+        }
+    });
     </script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <script>
-      // Get the button
-      let mybutton = document.getElementById("scrollToTopBtn");
-    
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              mybutton.style.display = "block";
-          } else {
-              mybutton.style.display = "none";
-          }
-      };
-    
-      // When the user clicks on the button, scroll to the top of the document
-      mybutton.onclick = function () {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-      };
+      const form = document.getElementById("contactForm");
+      const popup = document.getElementById("popupMessage");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        popup.classList.remove("hidden"); // Show the popup
+      });
+
+      function closePopup() {
+        popup.classList.add("hidden"); // Hide the popup
+        form.reset(); // Optional: Clear the form fields
+      }
     </script>
+
 </body>
 
 </html>
