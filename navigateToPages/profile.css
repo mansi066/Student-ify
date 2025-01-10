@@ -11,9 +11,12 @@
 .logged p{
     text-align: center;
     text-decoration: underline;
-    color: azure;
+    color: white;
     font-size: large ;
 }
 .sign-up , .log-in{
     text-align: center;
+}
+.theme-dark .logged {
+    background: linear-gradient(to right ,#4caf50,#ffc107);
 }
