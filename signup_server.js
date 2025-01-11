@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 const users = []; // Dummy user storage
 
 app.post('/signup', (req, res) => {
+    console.log('\nReceived data:', req.body);
     const { email, password, repeatPassword } = req.body;
 
     // Check if all fields are present

@@ -62,6 +62,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
             } else {
                 alert('Error: ' + data.message);
             }
+            document.getElementById('signupForm').reset();
         })
         .catch(error => {
             alert('An error occurred. Please try again.');
