@@ -41,6 +41,7 @@ app.post('/signup', (req, res) => {
 
     // Check if email already exists
     if (users.some(user => user.email === email)) {
+        console.log('\n'+email+' is already registered!');
         return res.status(400).json({ message: 'Email is already registered.' });
     }
 
@@ -49,6 +50,7 @@ app.post('/signup', (req, res) => {
 
     // Respond with success message
     res.status(201).json({ message: 'Account created successfully!' });
+    console.log('\n'+email+' is registered successfully!');
 });
 
 app.listen(3000, () => {
