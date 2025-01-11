@@ -152,7 +152,7 @@ body.theme-dark{
     justify-content: center;
 }
 
-.video-container .box-container .box{
+x{
     position: relative;
     border-radius: .5rem;
     padding: 2rem;
@@ -198,7 +198,7 @@ body.theme-dark{
     background-color: white;
     padding: 2rem;
 }
-
+.video-container .box-container .bo
 .watch-video .video-details .video{
     width: 100%;
     border-radius: 0.5rem;
