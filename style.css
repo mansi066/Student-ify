@@ -184,6 +184,7 @@ header{
         width: 26px !important;
     }
     .content {
+        height: auto;
         width: 100vw;
         padding: 10px;
     }
