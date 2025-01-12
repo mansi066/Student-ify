@@ -233,6 +233,8 @@ html, body {
         name="name"
         placeholder="Enter your name"
         required
+        pattern="^[a-zA-Z\s]{2,}$"
+        title="Name must contain only letters and spaces, and be at least 2 characters long."
         class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
@@ -243,6 +245,8 @@ html, body {
         name="email"
         placeholder="Enter your email"
         required
+        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        title="Please enter a valid email address."
         class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
@@ -253,6 +257,8 @@ html, body {
         name="mobile"
         placeholder="Enter your mobile number"
         required
+        pattern="^\d{10}$"
+        title="Mobile number must be 10 digits long."
         class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
 
@@ -263,6 +269,9 @@ html, body {
         rows="4"
         placeholder="Enter your message"
         required
+        minlength="10"
+        pattern=".*\S+.*"
+        title="Message must be at least 10 characters long and cannot be blank."
         class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       ></textarea>
 
