@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Roadmaps</title>
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+    <div class="container">
+        <div id="roadmaps-view" class="min-h-screen">
+            <div class="text-center header-section">
+                <h1>Career Roadmaps</h1>
+                <p>Choose your path and start learning today</p>
+            </div>
+
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input"
+                    placeholder="Search roadmaps..."
+                    class="search-input"
+                >
+            </div>
+
+            <div id="roadmaps-grid" class="roadmaps-grid">
+            </div>
+        </div>
+
+        <div id="roadmap-detail" class="min-h-screen hidden">
+            <div class="roadmap-header">
+                <h1 id="roadmap-title"></h1>
+                <p id="roadmap-description"></p>
+                <div class="progress-container">
+                    <div class="progress-header">
+                        <span>Overall Progress</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sections-container" class="sections-container">
+            </div>
+        </div>
+    </div>
+    <script src="roadmapdata.js"></script>
+    <script src="roadmap.js"></script>
+</body>
+</html>
