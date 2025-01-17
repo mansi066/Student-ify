@@ -3,6 +3,39 @@ class RoadmapApp {
         this.currentRoadmapId = null;
         this.progress = {};
         this.init();
+        this.initTheme();
+
+    }
+    initTheme() {
+        // Initialize theme based on localStorage or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme) {
+            document.documentElement.classList.toggle('theme-dark', savedTheme === 'dark');
+        } else {
+            document.documentElement.classList.toggle('theme-dark', prefersDark);
+        }
+
+        // Set up theme toggle event listener
+        const themeCheckbox = document.querySelector('.theme-switch__checkbox');
+        if (themeCheckbox) {
+            themeCheckbox.checked = document.documentElement.classList.contains('theme-dark');
+            themeCheckbox.addEventListener('change', (e) => {
+                document.documentElement.classList.toggle('theme-dark', e.target.checked);
+                localStorage.setItem('theme', e.target.checked ? 'dark' : 'light');
+                this.updateThemeColors();
+            });
+        }
+    }
+
+    updateThemeColors() {
+        const isDark = document.documentElement.classList.contains('theme-dark');
+        
+        document.documentElement.style.setProperty('--background-color', isDark ? '#1a1a1a' : '#f9fafb');
+        document.documentElement.style.setProperty('--text-primary', isDark ? '#ffffff' : '#111827');
+        document.documentElement.style.setProperty('--text-secondary', isDark ? '#9ca3af' : '#4b5563');
+        document.documentElement.style.setProperty('--border-color', isDark ? '#374151' : '#e5e7eb');
     }
 
     init() {
@@ -216,7 +249,10 @@ class RoadmapApp {
             }
         });
     }
-}
+    
+    }
+
+   
 
 document.addEventListener('DOMContentLoaded', () => {
     new RoadmapApp();
